@@ -282,8 +282,6 @@ app.get('/comics/:slug/chapters', scrapeLimiter, async (req, res) => {
         });
       }
     });
-
-    // Mengirimkan respons dalam format JSON
     res.json({ title, chapters });
 
   } catch (err) {
